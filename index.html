@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4f9d614bda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#workexperience">Work Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>ServiceNow Developer</p>
+            <h1>Hi, I'm <span>Aditya Penmetsa</span><br>from Canada</h1>
+        </div>
+    </div> 
+</div>
+<!-----------about---------->
+<div id="about">
+   <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>IT professional with 4+ years of experience in ITIL and IT Service Management solutions in IT infrastructure with expertise in ServiceNow ITSM Suite. ServiceNow expert with experience on Implemnting end-to-end Service Catalog, Incident Management, Configuration and Asset Management, Change Management and Release Management with extensive knowledge on Content Management</p>
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Tools</span><br>ServiceNow(ITSM,CMDB,Servie Products)</li>
+                        <li><span>Software Methodologies</span><br>SDLC, Waterfall, Agile, XP, Scrum</li>
+                        <li><span>Web Technologies</span><br>Angular JS, HTML5, CSS3</li>
+                        <li><span>Scripting Skills</span><br>JavaScript, HTML5, CSS</li>
+                        <li><span>Business tools</span><br>SAP-ERP, VBA Macros, MS Excel</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jan 2022 - Present</span><br>ServiceNow Developer at Rogers Communication, Canada</li>
+                        <li><span>Apr 2019- Jan 2021</span><br>ServiceNow Developer (ITSM) at Tata Consultancy Services, Canada</li>
+                        <li><span>Oct 2017- Apr 2019</span><br>ServiceNow Administrator at Tata Consultancy Services, India</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Jan 2022</span><br>Masters in Engineering at Concordia University, Canada</li>
+                        <li><span>May 2015</span><br>Bachelors in Engineering at K L University, India</li>
+                    </ul>
+                  </div>
+        </div>      
+    </div>
+   </div> 
+</div>
+<!-----------Work Experience---------->
+
+<div id="workexperience">
+    <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="workexperience-list">
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>ServiceNow Developer</h2>
+                <p>Need to Write short Description</p>
+                <a href="#">Full details in the Resume</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>ServiceNow Developer(ITSM)</h2>
+                <p>Need to Write short Description</p>
+                <a href="#">Full details in the Resume</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>ServiceNow Administrator</h2>
+                <p>Need to Write short Description</p>
+                <a href="#">Full details in the Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------Portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="portfolio-list">
+            <div class="Work">
+                <img src="images/work-1.png.png">
+                <div class="layer">
+                    <h3>Farm Connect</h3>
+                    <p>Website for Farming Needs</p>
+                    <a href="http://farmsconnect.pythonanywhere.com/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+    </div>
+</div>
+<!-----------Contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>  varma.pgav@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> +1 (438)-927-6600</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/govinda-a-v-p-056b5a252/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Aditya Penmetsa CV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 Aditya Penmetsa</p>
+        <p> All Rights Reserved </p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfGzJueCk5HBbE5i8fCWI4Q5tytXOai8xGzmIeKA7krIliiklnaKaxHHybcmTTo90_/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+ </script>
+
+
+</body>
+</html>
